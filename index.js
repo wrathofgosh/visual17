@@ -11,7 +11,10 @@ $(document).ready(function() {
                 return response.json();
              })
             .then(data => {
-                console.log(data);
+                //console.log(data);
+                for (let i = 0; i < data.length; i++) {
+                    console.log(`${i}: ${data.tier}. ${data.color}. ${data.url}`);
+                } 
             })
             .catch(error => {
                 console.error('Error:', error);
