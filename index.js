@@ -13,7 +13,7 @@ $(document).ready(function() {
             .then(data => {
                 //console.log(data);
                 for (let i = 0; i < data.length; i++) {
-                    console.log(`${i}: ${data.tier}. ${data.color}. ${data.url}`);
+                   console.log(`${i}: ${data[i].tier}. ${data[i].color}. ${data[i].url}`);
                 } 
             })
             .catch(error => {
